@@ -23,7 +23,7 @@ public class Solution {
             }
         }
 
-        int max = 0;
+        int max = -63;
         
         int rowLen = 6;
         int colLen = 6;
