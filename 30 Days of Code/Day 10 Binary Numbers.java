@@ -20,6 +20,9 @@ public class Solution {
 
         bufferedReader.close();
         
+		// using a regex to find the length of the longest match instead of
+		// manually converting from decimal to binary and tracking digits
+		
         String nBinary = Integer.toString(n, 2);
         
         Pattern regex = Pattern.compile("1+");
