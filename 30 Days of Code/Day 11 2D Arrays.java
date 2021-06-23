@@ -25,8 +25,8 @@ public class Solution {
 
         int max = -63;
         
-        int rowLen = 6;
-        int colLen = 6;
+        int rowLen = arr[0].length;
+        int colLen = arr.length;
         for(int list = 0; list < colLen; list++){
             for(int index = 0; index < rowLen; index++){
                 if(index + 2 < rowLen && list + 2 < colLen){
