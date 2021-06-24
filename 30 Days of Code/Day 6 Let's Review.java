@@ -14,6 +14,7 @@ public class Solution {
         
         for(int i = 0; i < N; i++){
             String str = input.nextLine();
+			
             for(int j = 0; j < str.length(); j++){
                 if(j % 2 == 0)
                     System.out.print(str.charAt(j));
