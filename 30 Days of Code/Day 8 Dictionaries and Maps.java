@@ -22,7 +22,6 @@ class Solution{
                 System.out.println(s + "=" + hashMap.get(s));
             else
                 System.out.println("Not found");
-                
         }
         in.close();
         

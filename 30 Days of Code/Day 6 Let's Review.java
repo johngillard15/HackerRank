@@ -15,19 +15,17 @@ public class Solution {
         for(int i = 0; i < N; i++){
             String str = input.nextLine();
 			
+            String evenChars = "";
+            String oddChars = "";
+            
             for(int j = 0; j < str.length(); j++){
                 if(j % 2 == 0)
-                    System.out.print(str.charAt(j));
+                    evenChars += str.charAt(j);
+                else
+                    oddChars += str.charAt(j);
             }
             
-            System.out.print(" ");
-            
-            for(int j = 0; j < str.length(); j++){
-                if(j % 2 != 0)
-                    System.out.print(str.charAt(j));
-            }
-            
-            System.out.println();
+            System.out.println(evenChars + " " + oddChars);
         }
     }
 }
