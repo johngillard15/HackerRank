@@ -12,13 +12,11 @@ class Solution{
         for(int i = 0; i < n; i++){
             String name = in.next();
             int phone = in.nextInt();
-            // Write code here
             hashMap.put(name, phone);
         }
         while(in.hasNext()){
             String s = in.next();
-            // Write code here
-            if(hashMap.get(s) != null)
+            if(hashMap.containsKey(s)) // hashMap.get(s) != null
                 System.out.println(s + "=" + hashMap.get(s));
             else
                 System.out.println("Not found");
